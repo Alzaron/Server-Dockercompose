@@ -1,0 +1,22 @@
+services:
+  none:
+   image: hello-world
+#
+#services:
+#  vault:
+#    container_name: vault
+#    image: vaultwarden/server:latest
+#    expose:
+#      - 80
+#    volumes:
+#      - $CONFIGDIR/vaultwarden/:/data/
+#    environment:
+#      TZ: $TZ
+#    networks:
+#      - proxy
+#    restart: unless-stopped
+#
+#networks:
+#  proxy:
+#    driver: bridge
+#    external: true

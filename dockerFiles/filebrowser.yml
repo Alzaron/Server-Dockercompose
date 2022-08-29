@@ -1,0 +1,17 @@
+version: '3'
+services:
+  filebrowser:
+    container_name: filebrowser
+    image: filebrowser/filebrowser:s6
+    ports:
+      - $FILEBROWSER_PORT:80
+    volumes:
+      - $CONFIGDIR/filebrowser/filebrowser.db:/database/filebrowser.db
+      # - /mnt:/mnt
+    environment:
+      TZ: $TZ
+      PGID: $PGID
+      PUID: $PUID
+      # UMASK: ${UMASK:?err}
+    restart: unless-stopped
+

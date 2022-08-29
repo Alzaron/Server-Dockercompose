@@ -1,0 +1,19 @@
+services:
+  none:
+   image: hello-world
+
+  # plex:
+  #   image: ghcr.io/linuxserver/plex
+  #   container_name: plex
+  #   network_mode: host
+  #   environment:
+  #     - PUID=$PUID
+  #     - PGID=$PGID
+  #     - TZ=$TZ
+  #     - VERSION=docker
+  #     - PLEX_CLAIM= # 
+  #   volumes:
+  #     - $CONFIGDIR/plex:/config
+  #     - $TVDIR:/tv
+  #     - $MOVIEDIR:/movies
+  #   restart: unless-stopped

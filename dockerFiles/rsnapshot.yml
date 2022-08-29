@@ -1,0 +1,16 @@
+services:
+  none:
+   image: hello-world
+
+  # rsnapshot:
+  #   image: lscr.io/linuxserver/rsnapshot:latest
+  #   container_name: rsnapshot
+  #   environment:
+  #     - PUID=$PUID
+  #     - PGID=$PGID
+  #     - TZ=$TZ
+  #   volumes:
+  #     - $CONFIGDIR/rsnapshot:/config
+  #     - $BACKUPDIR:/.snapshots #optional
+  #     - $DATADIR:/data #optional
+  #   restart: unless-stopped

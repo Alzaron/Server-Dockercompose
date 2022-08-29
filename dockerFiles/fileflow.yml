@@ -1,0 +1,3 @@
+services:
+  none:
+   image: hello-world
